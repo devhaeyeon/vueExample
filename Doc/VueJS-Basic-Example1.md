@@ -1,10 +1,7 @@
 # VueJS Basic Example
-
-# Vue Basic - example
-
 ## **학습한 강좌의 커리 큘럼**
 
-: 누구나 다루기 쉬운 Vue.js 프론트 개발 - 3시간 안에 배우기
+:누구나 다루기 쉬운 Vue.js 프론트 개발 - 3시간 안에 배우기
 
 [https://www.inflearn.com/course/vue-pwa-vue-js-기본/#course-curriculum](https://www.inflearn.com/course/vue-pwa-vue-js-%EA%B8%B0%EB%B3%B8/#course-curriculum)
 
