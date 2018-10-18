@@ -93,20 +93,23 @@ const cardViewComponent = {
     </div>
     `
 }
+
 Vue.component('cardview-component',cardViewComponent);
+
 
 // 메인 컴포넌트
 const Main = {
     props:['cardViewItems','listViewItems'],
     template:`
-        <div>    
+        <div>
             <section class="section section-lg pt-lg-0 mt--200">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-12">
-                        <div class="row row-grid>
-                            <cardview-component v-bind:card-view-items="cardviewitem" :key="cardviewitem.id" v-for="cardviewitem in cardViewItems"></cardview-component>
-                        </div>                
+                            <div  class="row row-grid">
+                                <!-- props 전달 -->
+                                <cardview-component v-bind:card-view-items="cardviewitem" :key="cardviewitem.id" v-for="cardviewitem in cardViewItems"></cardview-component>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,10 +122,10 @@ const Main = {
                             <p class="lead text-white">인프런에서 학습한 내용을 바탕으로 예제를 만들어 보았습니다.</p>
                         </div>
                     </div>
-                    <div class="row row-grid>
+                    <div class="row row-grid mt-5">
                         <listview-component :key="listviewitem.id" v-bind:list-view-items="listviewitem" v-for="listviewitem in listViewItems"></listview-component>
                     </div>
-                    </div>
+                </div>
                 <!-- SVG separator -->
                 <div class="separator separator-bottom separator-skew zindex-100">
                     <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -185,8 +188,5 @@ const app = new Vue({
     router,
     data() {
         return dataSet
-    },
-    components:{
-        'cardview-component':cardViewComponent
     }
 }).$mount('#app');
