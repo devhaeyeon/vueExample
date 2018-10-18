@@ -109,7 +109,7 @@
 ```javascript
     // 전역 컴포넌트 : 컴포넌트를 뷰 인스턴스에 등록해서 사용할 때 사용
     Vue.component('cardview-cmp',{
-    	template:'<div>카드뷰</div>, // 인스턴스의 화면 내용
+    	template:'<div>카드뷰</div>', // 인스턴스의 화면 내용
     	data:'' // 인스턴스가 갖는 데이터
     	methods: '',
     	created : ''
