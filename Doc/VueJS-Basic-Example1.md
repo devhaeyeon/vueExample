@@ -400,5 +400,7 @@ Vue : VirtualDOM을 사용함.
 
 ## 참고 사이트
 > 해당 내용은 캡틴판교 블로그, 공식홈페이지의 내용을 토대로 작성 하였습니다.
+
 > 캡틴판교 - https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/
+
 > 공식홈페이지 - https://kr.vuejs.org/index.html
